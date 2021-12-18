@@ -1,13 +1,15 @@
 import React from "react";
 import { View, Text, StyleSheet, Button } from "react-native";
 
+import MainButton from "../components/MainButton";
+
 const GameOverScreen = (props) => {
   return (
     <View style={styles.screen}>
       <Text>The Game is Over!</Text>
       <Text>Guesses: {props.roundsNumber}</Text>
       <Text>Number was: {props.userNumber}</Text>
-      <Button title="New Game" onPress={props.onStartOver} />
+      <MainButton onPress={props.onStartOver}>New Game</MainButton>
     </View>
   );
 };
