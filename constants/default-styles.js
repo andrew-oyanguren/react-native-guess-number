@@ -7,6 +7,7 @@ export default StyleSheet.create({
   },
   title: {
     fontFamily: "open-sans-bold",
-    color: "blue",
+    fontSize: 30,
+    color: "green",
   },
 });
